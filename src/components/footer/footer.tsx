@@ -1,16 +1,13 @@
-import React from "react";
-import styles from "./style.module.scss";
+import React from "react"
+import styles from "./style.module.scss"
 
 const Footer = () => {
-  const servicesLinks = ["Каталог услуг", "Документация", "Баз знаний"];
-  const portalLinks = [
-    "Как создать обращение",
-    "Поддержка систем",
-    "Обратная связь",
-  ];
+  const servicesLinks = ["Каталог услуг", "Документация", "Баз знаний"]
+  const portalLinks = ["Как создать обращение", "Поддержка систем", "Обратная связь"]
 
   return (
     <footer className={styles.footer}>
+      <div className="bg-black2 text-"></div>
       <div className={styles.container}>
         <div className={styles.grid}>
           <div className={styles.column}>
@@ -44,7 +41,10 @@ const Footer = () => {
             <h4 className={styles.heading}>Услуги и справка</h4>
             <div className={styles.linkList}>
               {servicesLinks.map((link, index) => (
-                <div className={styles.linkItem} key={index}>
+                <div
+                  className={styles.linkItem}
+                  key={index}
+                >
                   <span>{link}</span>
                 </div>
               ))}
@@ -55,7 +55,10 @@ const Footer = () => {
             <h4 className={styles.heading}>Работа с порталом</h4>
             <div className={styles.linkList}>
               {portalLinks.map((link, index) => (
-                <div className={styles.linkItem} key={index}>
+                <div
+                  className={styles.linkItem}
+                  key={index}
+                >
                   <span>{link}</span>
                 </div>
               ))}
@@ -66,12 +69,12 @@ const Footer = () => {
 
       <div className={styles.container}>
         <p className={styles.copy}>
-          © 2025 Министерство государственного управления, информационных
-          технологий и связи Московской области
+          © 2025 Министерство государственного управления, информационных технологий и связи
+          Московской области
         </p>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
