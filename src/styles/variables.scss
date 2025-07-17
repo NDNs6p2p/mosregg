@@ -1,52 +1,45 @@
 :root {
-
-	// TIME (all theme):
-	--animationTimeBase: 500ms;
-	--animationTimeSmall: 200ms;
+  // TIME (all theme):
+  --animationTimeBase: 500ms;
+  --animationTimeSmall: 200ms;
 }
 
-:root[data-theme='light'] {
-	// --colorText: black;
-	// --colorBg: white;
-	// --colorBlack: black;
-	// --colorWhite: white;
-	// --colorError: #ff2f2f;
-	// --colorLink: #0d6efd;
-	// --colorLinkHover: #094bb0;
+:root[data-theme="light"] {
+  // --colorText: black;
+  // --colorBg: white;
+  // --colorBlack: black;
+  // --colorWhite: white;
+  // --colorError: #ff2f2f;
+  // --colorLink: #0d6efd;
+  // --colorLinkHover: #094bb0;
 
-	// COLORS:
-	// White
-	--colorWhite: #fff;
-	--colorWhiteSmoke: #efefef;
+  // COLORS:
+  // White
+  --colorWhite: #fff;
+  --colorWhiteSmoke: #efefef;
 
-	// Grey
-	--colorTransparentGrey: #aeb7c21f;
-	--colorBlack: #000;
-	--colorBrightGrey: #eaeaea;
+  // Grey
+  --colorTransparentGrey: #aeb7c21f;
+  --colorBlack: #000;
+  --colorBrightGrey: #eaeaea;
 
+  // Blue
+  --colorBlueWhite: #f5ffff;
+  --colorBlueLight: #bbf2f6;
+  --colorBlueSky: #07b4c5;
 
-
-	// Blue
-	--colorBlueWhite: #f5ffff;
-	--colorBlueLight: #bbf2f6;
-	--colorBlueSky: #07b4c5;
-
-
-
-	// Text Shadow winner
-	--textWinnerShadow: #006181;
+  // Text Shadow winner
+  --textWinnerShadow: #006181;
 }
 
-:root[data-theme='dark'] {
-	// Blue
-	--colorBackground: #00283b;
+:root[data-theme="dark"] {
+  // Blue
+  --colorBackground: #00283b;
 
-	// White
-	--colorWhite: #ccd4d4;
-	--colorThemeToggle: white;
+  // White
+  --colorWhite: #ccd4d4;
+  --colorThemeToggle: white;
 
-	// Black
-	--colorBlack: #000;
-
+  // Black
+  --colorBlack: #000;
 }
-

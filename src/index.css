@@ -1,13 +1,29 @@
-*, *::before, *::after {
+@import "tailwindcss";
+
+@theme {
+  --color-green: #13a654;
+  --color-red: #fa4d5e;
+  --color-red2: #fd3b3b;
+  --color-black: #000000;
+  --color-black2: #14141b;
+  --color-white2: #ffffff;
+  --color-white2: #f4f6fc;
+  --color-blue2: #0d5bf9;
+  --font-poppins: Poppins, sans-serif;
+  --color-border-light: #dee1ec;
+  --color-text-secondary: #65657d;
+  --color-error: #fc3f1e;
+  --color-shadow: rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -17,23 +33,35 @@ body {
   font-family: "Onest", Helvetica, Arial, sans-serif;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
 #root {
   isolation: isolate;
 }
-
 
 @font-face {
   font-family: "Onest";
@@ -96,4 +124,3 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   font-style: normal;
 }
-
