@@ -3,7 +3,7 @@ import { UserData } from "../../types/userData"
 import { useNavigate } from "react-router-dom"
 import { observer } from "mobx-react-lite"
 import { localStore } from "../../stores/localStore"
-import { IconCatalog } from "../../assets/images/IconCatalog.svg"
+import IconCatalog from "../../assets/images/IconCatalog.svg"
 
 const CatalogArr = [
   {
@@ -105,7 +105,32 @@ const CatalogArr = [
 ]
 
 const Catalog = () => {
-  return <div className="absolute">Catalog</div>
+  return (
+    <div className="mb-16">
+      <div>Группы услуг</div>
+      <div className="grid grid-cols-4 gap-6">
+        {CatalogArr.map((sevice: any) => (
+          <div className="border-[#DEE1EC] border-2 rounded-2xl p-6">
+            <div className="bg-blue2 max-w-12 max-h-12 h-full rounded-full flex justify-center items-center">
+              <img src={sevice.icon} />
+            </div>
+            <div>{sevice.title}</div>
+            <div className="h-28 mb-2">{sevice.text}</div>
+            <div>
+              {
+                sevice.childElements.map((seviceChild: any) => (
+                  <div className="flex items-center gap-2">
+                    <div className="rounded-full w-2 h-2 bg-blue2"></div>
+                    <div>{seviceChild.title}</div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default Catalog
